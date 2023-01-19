@@ -19,27 +19,34 @@ function Navbar() {
   const [shown, setShown] = useState(false);
   const windowListener = (e: MouseEvent): any => {
     const currentNav = nav.current;
-    if (currentNav == null || e.target === currentNav || currentNav.contains(e.target as Node)) {
+    if (
+      currentNav == null ||
+      e.target === currentNav ||
+      currentNav.contains(e.target as Node)
+    ) {
       return;
     }
 
     if (e.target !== currentNav && !currentNav.contains(e.target as Node)) {
       setShown(false);
     }
-  }
+  };
   useEffect(() => {
-    document.addEventListener('click', windowListener);
-    return () => document.removeEventListener('click', windowListener)
-  }, [ ])
+    document.addEventListener("click", windowListener);
+    return () => document.removeEventListener("click", windowListener);
+  }, []);
   return (
-    <div css={tw`bg-[#27282c] w-full flex justify-between flex-wrap fixed top-0`} ref={nav}>
+    <div
+      css={tw`bg-[#27282c] w-full flex justify-between flex-wrap fixed top-0`}
+      ref={nav}
+    >
       <div css={tw`flex`}>
         <img src="/img/icon.png" css={tw`h-[4rem]`} />
         <div css={tw`text-xl text-white my-auto cursor-default`}>
           DiscordSRVUtils
         </div>
       </div>
-      <NavToggleButton src={MenuIcon} onClick={() => setShown(!shown)}/>
+      <NavToggleButton src={MenuIcon} onClick={() => setShown(!shown)} />
       <LinksContainer className={shown ? "shown" : ""}>
         {navLinks.map((link) => (
           <NavButton href={link.link} target="_blank">

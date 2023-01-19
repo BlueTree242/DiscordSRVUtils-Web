@@ -61,48 +61,54 @@ type Feature = {
   ];
 };
 const wikiButton = (link: string) => {
-    return  {
-        title: "See Wiki",
-        onClick: link,
-        icon: faBook,
-      }
-}
+  return {
+    title: "See Wiki",
+    onClick: link,
+    icon: faBook,
+  };
+};
 
 const features: Feature[] = [
   {
     title: "Messages Fully Custom",
-    description: "Completely Customize your messages. Any Message Can be embed, or normal text, or both. PAPI Supported too! All with a message system!",
+    description:
+      "Completely Customize your messages. Any Message Can be embed, or normal text, or both. PAPI Supported too! All with a message system!",
     imageIdentifier: "1",
     buttons: [wikiButton("https://wiki.discordsrvutils.xyz/messages/")],
   },
   {
     title: "Punishment sync and Messages",
-    description: "Sync Punishments with your discord (if player is linked). Send Messages to Discord, They Are Completely Custom! Supports 3 punishment plugins.",
+    description:
+      "Sync Punishments with your discord (if player is linked). Send Messages to Discord, They Are Completely Custom! Supports 3 punishment plugins.",
     imageIdentifier: "5",
-    buttons: [wikiButton("https://wiki.discordsrvutils.xyz/punishments-integration/")]
+    buttons: [
+      wikiButton("https://wiki.discordsrvutils.xyz/punishments-integration/"),
+    ],
   },
   {
     title: "Tickets System",
-    description: "Create a ticket panel, and any user can open a ticket! 90% custom messages and easy to use!",
+    description:
+      "Create a ticket panel, and any user can open a ticket! 90% custom messages and easy to use!",
     imageIdentifier: "6",
-    buttons: [wikiButton("https://wiki.discordsrvutils.xyz/tickets/")]
+    buttons: [wikiButton("https://wiki.discordsrvutils.xyz/tickets/")],
   },
   {
     title: "Suggestions System",
     description: "Unique Suggestions System!",
     imageIdentifier: "8",
-    buttons: [wikiButton("https://wiki.discordsrvutils.xyz/suggestions/")]
+    buttons: [wikiButton("https://wiki.discordsrvutils.xyz/suggestions/")],
   },
   {
     title: "Server Status System",
     description: "Server Status Channel for your server!",
     imageIdentifier: "9",
-    buttons: [wikiButton("https://wiki.discordsrvutils.xyz/status/")]
+    buttons: [wikiButton("https://wiki.discordsrvutils.xyz/status/")],
   },
   {
     title: "Server Status System",
-    description: "Track invites, who invited and how many, and if they left or still in server!!",
+    description:
+      "Track invites, who invited and how many, and if they left or still in server!!",
     imageIdentifier: "7",
-    buttons: [wikiButton("https://wiki.discordsrvutils.xyz/invite-tracking/")]
+    buttons: [wikiButton("https://wiki.discordsrvutils.xyz/invite-tracking/")],
   },
 ];
