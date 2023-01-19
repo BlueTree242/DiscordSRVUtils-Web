@@ -1,0 +1,102 @@
+[
+  {
+    "version": "1.2.11",
+    "beta": false
+  },
+  {
+    "version": "1.2.10",
+    "beta": false
+  },
+  {
+    "version": "1.2.9",
+    "beta": false
+  },
+  {
+    "version": "1.2.8",
+    "beta": false
+  },
+  {
+    "version": "1.2.7",
+    "beta": false
+  },
+  {
+    "version": "1.2.6",
+    "beta": false
+  },
+  {
+    "version": "1.2.5",
+    "beta": false
+  },
+  {
+    "version": "1.2.4",
+    "beta": false
+  },
+  {
+    "version": "1.2.4-BETA-1",
+    "beta": true
+  },
+  {
+    "version": "1.2.3",
+    "beta": false
+  },
+  {
+    "version": "1.2.3-BETA-3",
+    "beta": true
+  },
+  {
+    "version": "1.2.3-BETA-2",
+    "beta": true
+  },
+  {
+    "version": "1.2.3-BETA-1",
+    "beta": true
+  },
+  {
+    "version": "1.2.2",
+    "beta": false
+  },
+  {
+    "version": "1.2.1",
+    "beta": false
+  },
+  {
+    "version": "1.2.0",
+    "beta": false
+  },
+  {
+    "version": "1.2.0-BETA-8",
+    "beta": true
+  },
+  {
+    "version": "1.2.0-BETA-7",
+    "beta": true
+  },
+  {
+    "version": "1.2.0-BETA-6",
+    "beta": true
+  },
+  {
+    "version": "1.2.0-BETA-5",
+    "beta": true
+  },
+  {
+    "version": "1.2.0-BETA-4",
+    "beta": true
+  },
+  {
+    "version": "1.2.0-BETA-3",
+    "beta": true
+  },
+  {
+    "version": "1.2.0-BETA-2",
+    "beta": true
+  },
+  {
+    "version": "1.2.0-BETA-1",
+    "beta": true
+  },
+  {
+    "version": "1.2.0-BETA",
+    "beta": true
+  }
+]
