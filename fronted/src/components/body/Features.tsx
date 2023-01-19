@@ -43,6 +43,7 @@ function Features() {
           <hr />
         </>
       ))}
+      <h1 css={tw`my-5`}>And Alot more..</h1>
     </>
   );
 }

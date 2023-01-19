@@ -3,6 +3,7 @@ import GlobalStyleSheet from "./assets/css/GlobalStyleSheet";
 import About from "./components/body/About";
 import BodyHeader from "./components/body/BodyHeader";
 import Features from "./components/body/Features";
+import Footer from "./components/body/Footer";
 import Navbar from "./components/navbar/Navbar";
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <BodyHeader />
         <About />
         <Features />
+        <Footer/>
       </div>
     </>
   );
