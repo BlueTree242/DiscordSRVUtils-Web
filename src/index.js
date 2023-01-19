@@ -8,7 +8,7 @@ const app = express();
 const port = 3000;
 
 app.use(compression());
-const staticSettings = { maxAge: "2h" };
+const staticSettings = { maxAge: "2d" };
 app.use("/assets", express.static("fronted/dist/assets", staticSettings));
 app.use("/img", express.static("fronted/dist/img", staticSettings));
 app.get("/updatecheck", async (req, res) => {
