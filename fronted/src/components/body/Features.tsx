@@ -44,6 +44,7 @@ function Features() {
         </>
       ))}
       <h1 css={tw`my-5`}>And Alot more..</h1>
+      <hr/>
     </>
   );
 }
