@@ -106,10 +106,10 @@ const features: Feature[] = [
     buttons: [wikiButton("https://wiki.discordsrvutils.xyz/status/")],
   },
   {
-    title: "Server Status System",
+    title: "Invite Tracking System",
     description:
       "Track invites, who invited and how many, and if they left or still in server!!",
-    imageIdentifier: "7",
+    imageIdentifier: "10",
     buttons: [wikiButton("https://wiki.discordsrvutils.xyz/invite-tracking/")],
   },
 ];
