@@ -14,6 +14,7 @@ import {
   faDiscord,
   faJenkins,
 } from "@fortawesome/free-brands-svg-icons";
+import analytics, { buttonClick } from "../../analytics";
 function Navbar() {
   const nav = useRef<HTMLDivElement>(null);
   const [shown, setShown] = useState(false);
@@ -49,7 +50,7 @@ function Navbar() {
       <NavToggleButton src={MenuIcon} onClick={() => setShown(!shown)} />
       <LinksContainer className={shown ? "shown" : ""}>
         {navLinks.map((link) => (
-          <NavButton href={link.link} target="_blank">
+          <NavButton href={link.link} target="_blank" onClick={e =>  buttonClick(link.display, {on: "navbar"})}>
             {link.icon && <FontAwesomeIcon icon={link.icon}></FontAwesomeIcon>}{" "}
             {link.display}
           </NavButton>
@@ -131,6 +132,3 @@ const navLinks: NavLink[] = [
     icon: faJenkins,
   },
 ];
-function openLink(link: string) {
-  window.open(link);
-}

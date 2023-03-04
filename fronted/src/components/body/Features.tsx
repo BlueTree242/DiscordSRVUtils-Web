@@ -3,6 +3,7 @@ import { faBook } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { MouseEventHandler } from "react";
 import tw from "twin.macro";
+import { buttonClick } from "../../analytics";
 import Button from "../../elements/Button";
 
 function Features() {
@@ -22,8 +23,15 @@ function Features() {
                       css={tw`px-10`}
                       onClick={
                         typeof button.onClick === "function"
-                          ? button.onClick
-                          : () => window.open(button.onClick as string)
+                          ? event => {
+                            buttonClick(button.title, {on: "features", "feature_title": feature.title})
+                            const handler = button.onClick as MouseEventHandler;
+                            handler(event);
+                          }
+                          : () => {
+                            buttonClick(button.title, {on: "features", "feature_title": feature.title})
+                            window.open(button.onClick as string)
+                          }
                       }
                     >
                       {button.icon && (

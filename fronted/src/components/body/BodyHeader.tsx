@@ -2,6 +2,7 @@ import tw from "twin.macro";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import Button from "../../elements/Button";
+import { buttonClick } from "../../analytics";
 
 function BodyHeader() {
   return (
@@ -10,7 +11,10 @@ function BodyHeader() {
         <img src="/img/icon.png" height="150px" />
         <h1 css={tw`text-2xl`}>DiscordSRVUtils Addon</h1>
         <p css={tw`text-3xl mt-2`}>Improve your DiscordSRV Bot & Discord!</p>
-        <Button css={tw`mt-5 w-[90%]`} onClick={() => window.open("/dl")}>
+        <Button css={tw`mt-5 w-[90%]`} onClick={() => {
+          window.open("/dl")
+          buttonClick("Download", {on: "body_header"})
+        }}>
           <FontAwesomeIcon icon={faDownload}></FontAwesomeIcon> Download
         </Button>
       </div>
